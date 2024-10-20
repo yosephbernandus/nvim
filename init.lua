@@ -1073,6 +1073,9 @@ require('lazy').setup({
       vim.g.rainbow_delimiters = { highlight = highlight }
       require('ibl').setup {
         -- scope = { highlight = highlight },
+        exclude = {
+          filetypes = { 'help', 'lazy', 'terminal' },
+        },
         scope = { enabled = false },
 
         indent = { highlight = highlight },
